@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JARVIS — Joz v1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="orb"></div>
+      <div>
+        <h1>JARVIS</h1>
+        <p>Asistente personal de Joz · v1</p>
+      </div>
+    </header>
+
+    <section id="status" class="status">● EN ESPERA</section>
+
+    <section id="chat" class="chat">
+      <div class="msg jarvis">
+        <b>JARVIS:</b> Buenos días, Joz. Sistemas básicos en línea.
+        Puedes escribirme o usar el micrófono. Prueba: <i>“¿qué hora es?”</i>
+        o <i>“recuerda que mañana tengo examen”</i>.
+      </div>
+    </section>
+
+    <div class="controls">
+      <input id="input" type="text" placeholder="Escribe una orden..." autocomplete="off">
+      <button id="mic" title="Hablar">🎙️</button>
+      <button id="send">Enviar</button>
+    </div>
+
+    <section class="memory">
+      <div class="memory-head">
+        <h2>Memoria local</h2>
+        <button id="clearMemory">Borrar</button>
+      </div>
+      <div id="memoryList">Sin recuerdos guardados.</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
